@@ -1,0 +1,144 @@
+.outerBox {
+  width: 40vmin;
+  height: 60vmin;
+  background-color: #F2F2F2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+} 
+
+.minimized.outerBox{
+  height: 6vmin;
+}
+
+.outerBox_clearAll{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  width: 11vmin;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.outerBox_clearAll span {
+  color: #1E80EF;
+  cursor: pointer;
+}
+
+.outerBox_wrapper1 {
+  position: fixed;
+  width: 100%;
+}
+
+.disabled-button{
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.collapsed .outerBox_wrapper1{
+  height: 100%;
+}
+
+.outerBox_wrapper2{
+  margin-top: 30%;
+  height: 100%;
+}
+
+.outerBox_heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+  position: relative;
+}
+
+.collapsed .outerBox_heading {
+  height: 100%; 
+  flex-direction: column-reverse;
+}
+
+.collapsed{
+  height: 25vmin;
+  width: 9vmin;
+}
+
+.collapsed h3{
+  transform: rotate(-90deg);
+  position: absolute;
+  font-size: 2rem;
+  bottom: 20%;
+}
+
+.outerBox_icons{
+  width: 4vmin;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.collapsed .outerBox_icons {
+  width: 1vmin;
+  top: 7%;
+  position: absolute;
+  display: block;
+}
+
+.outerBox_icons svg {
+  cursor: pointer;
+  color: #1E80EF;
+}
+
+.outerBox_search {
+  margin: 10px 20px;
+  position: relative;
+}
+
+.outerBox_search_input {
+  width: 100%;
+  padding: 10px 5px;
+  padding-left: 30px;
+}
+.outerBox_search_icon{
+  position: absolute;
+  color: #1E80EF;
+  left: 10px;
+  top: calc(50% - 0.5em);
+}
+
+.outerBox_list_wrapper{
+  overflow: hidden;
+  height: 100%;
+  padding: 20px;
+}
+
+.outerBox_list {
+  height: 80%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.outerBox_keyIndex{
+  position: relative;
+}
+
+.outerBox_keyIndex_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  height: 400px;
+  right: 20px;
+  top: 20px;
+}
+
+.outerBox_keyIndex_wrapper span {
+  color: cornflowerblue;
+  font-size: 1.5vmin;
+  cursor: pointer;
+}
+
